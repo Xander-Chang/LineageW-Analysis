@@ -1,7 +1,7 @@
-### LineageW-Analysis
-## 1. membership-database
-* 寫一個入口登入網站(login.html)
-* 用 PHP 連接資料庫(dbtest.php)
-* 檢查帳密是否正確(
+## LineageW-Analysis
+### 1. LineageW-Analysis
+* 將不同等級在不同地點練功的經驗值做圖表分析
+* 資料清洗 將空值去除
+
 <hr>
 
