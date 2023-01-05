@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 資料引入
-level = 66
-df = pd.read_excel("天堂w_練功.xlsx", sheet_name="level")
+
+df = pd.read_excel("天堂w_練功.xlsx", sheet_name="66")
 # print('原本的樣子:\n', df,'\n')
 
 # 資料清洗
@@ -30,18 +30,19 @@ ex = df3["經驗值"]
 money = df3["錢"]
 
 
-plt.figure(figsize=(16,8))
+plt.figure(figsize=(12,10))
 plt.bar(spot, ex)
 plt.yticks(np.arange(0, 1, 0.05))
 plt.grid()
-plt.legend()
 
 
-#上標籤 未解決 用text 但似乎有series 資料型態有問題
 
 plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei'] 
 plt.rcParams['axes.unicode_minus'] = False
 
-plt.title(level, "等妖精練功地點效率圖")
+plt.title("66等妖精練功地點效率圖")
 plt.show()
+
+#上標籤 未解決 用text 但似乎有series 資料型態有問題
+
 
