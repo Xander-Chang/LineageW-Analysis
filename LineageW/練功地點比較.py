@@ -8,7 +8,7 @@ df = pd.read_excel("天堂w_練功.xlsx", sheet_name="66")
 
 # 資料清洗
 df1 = df.iloc[:,0:4]
-print('iloc 取前面5個 col:\n', df1,'\n')
+# print('iloc 取前面5個 col:\n', df1,'\n')
 # df3 = df1.dropna(how='all')      
 # print('dropna 空格的資料\n', df3,'\n')
 df2 = df1.dropna(how='any')
@@ -36,8 +36,7 @@ plt.grid()
 plt.legend()
 
 
-for x,y in zip(df3["地點"], ex):
-    plt.text(x, y, ex)
+#上標籤 未解決 用text 但似乎有series 資料型態有問題
 
 plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei'] 
 plt.rcParams['axes.unicode_minus'] = False
