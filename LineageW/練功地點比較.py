@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 資料引入
-df = pd.read_excel("天堂w_練功.xlsx", sheet_name="66")
+level = 66
+df = pd.read_excel("天堂w_練功.xlsx", sheet_name="level")
 # print('原本的樣子:\n', df,'\n')
 
 # 資料清洗
@@ -41,6 +42,6 @@ plt.legend()
 plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei'] 
 plt.rcParams['axes.unicode_minus'] = False
 
-plt.title("66等妖精練功地點效率圖")
+plt.title(level, "等妖精練功地點效率圖")
 plt.show()
 
