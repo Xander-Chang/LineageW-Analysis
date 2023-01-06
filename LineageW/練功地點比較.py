@@ -21,13 +21,16 @@ summeries = {'經驗值': 'mean', '錢': 'mean'}
 df3 = df2.groupby(by=col_names).agg(summeries).reset_index()
 # print('groupby排序/計算後:\n', df3,'\n')
 
+df4 = df3.sort_values('經驗值', ascending=False)
+print(df4)
 
 
 # 製圖
-level = df3["等級"]
-spot = df3["地點"].astype(str)
-ex = df3["經驗值"]
-money = df3["錢"]
+
+level = df4["等級"]
+spot = df4["地點"].astype(str)
+ex = df4["經驗值"]
+money = df4["錢"]
 
 
 plt.figure(figsize=(12,10))
@@ -44,5 +47,4 @@ plt.title("66等妖精練功地點效率圖")
 plt.show()
 
 #上標籤 未解決 用text 但似乎有series 資料型態有問題
-
 
