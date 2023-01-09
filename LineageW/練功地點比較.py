@@ -35,7 +35,13 @@ money = df4["錢"]
 
 plt.figure(figsize=(12,10))
 plt.bar(spot, ex)
-plt.yticks(np.arange(0, 1, 0.05))
+
+plt.xlabel('地點')
+
+plt.ylabel('經驗趴數')
+plt.ylim(0,1.2)
+plt.yticks(np.arange(0, 1.2, 0.05))
+
 plt.grid()
 
 

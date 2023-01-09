@@ -14,8 +14,14 @@ print(df)
 
 plt.figure(figsize=[10,8])
 plt.bar(df['地點'], df['錢'])
+
+plt.xlabel('地點')
 plt.xticks(rotation=45)                               # rotation 旋轉字體
+
+plt.ylabel('金錢數量')
+plt.ylim(0, 400000)
 plt.yticks(np.arange(10000, 400000, 10000))
+
 plt.grid()
 
 plt.title("66 等妖精練功地點效率圖")
