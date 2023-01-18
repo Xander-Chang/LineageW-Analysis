@@ -34,15 +34,17 @@ money = df4["錢"]
 
 
 plt.figure(figsize=(12,10))
-plt.bar(spot, ex)
+plt.bar(spot, ex, alpha=0.75, color='g', label='經驗值')
 
 plt.xlabel('地點')
+plt.xticks(rotation=60) 
 
 plt.ylabel('經驗趴數')
 plt.ylim(0,1.2)
 plt.yticks(np.arange(0, 1.2, 0.05))
 
 plt.grid()
+plt.legend(loc='best')
 
 
 
