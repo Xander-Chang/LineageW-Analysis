@@ -28,10 +28,10 @@ plt.grid()
 
 # 金錢Line
 ax2 = ax.twinx()
-ax2 = plt.plot(df['地點'],df['錢'],label='錢', color='#a59922',alpha=0.5)
+ax2 = plt.plot(df['地點'],df['錢'],label='錢', color='#FFA500',alpha=0.8)
 plt.ylabel('金錢數量')
-plt.ylim(0, 700000)
-plt.yticks(np.arange(50000, 720000, 50000))
+plt.ylim(0, 900000)
+plt.yticks(np.arange(50000, 950000, 50000))
 
 
 # legend_tags = [ax1, ax2]
